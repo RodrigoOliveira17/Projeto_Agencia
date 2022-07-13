@@ -34,16 +34,20 @@ header, .navbar {
 }
 
 .navbar-brand:hover {
+    color: rgb(223, 217, 217);
+}
+#navbar-links a  {
     color: #FFF;
 }
-a.navbar-links {
-    color: #FFF;
+
+#navbar-links a:hover  {
+    color: rgb(223, 217, 217);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 1rem .8rem;
 }
 
-.nav-bar .nav-link {
+.nav-bar a.nav-link {
     color: white;
 }
