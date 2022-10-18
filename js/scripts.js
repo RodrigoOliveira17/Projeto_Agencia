@@ -190,3 +190,30 @@ $( document ).ready(function() {
     });
   
   });
+
+  'use strict';
+
+const myForm = document.getElementById("myForm");
+myForm.addEventListener('submit',gravar);
+
+function gravar(e){
+    e.preventDefault();
+    const formData = new FormData(this);
+    const searchParams = new URLSearchParams();
+
+    for(const par of formData){
+        searchParams.append(par[0],par[1],par[2]);
+    }
+
+    fetch('PROJETO_AGENCIA.php',{
+        method:'POST',
+        body:formData
+    }).then(function(response){
+        document.getElementById('email').value=" ";
+        document.getElementById('assunto').value=" ";
+        document.getElementById('mensagem').value=" ";
+        prompt('Dados gravados com sucesso!');
+    }).catch(function(error){
+        console.log(error);
+    });
+}

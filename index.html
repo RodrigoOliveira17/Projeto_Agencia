@@ -310,11 +310,14 @@
               <p>Ou nos deixe uma mensagem:</p>
             </div>
             <div class="col-md-6" id="contact-form">
-              <form action="">
-                <input type="text" class="form-control" placeholder="E-mail" name="email">
-                <input type="text" class="form-control" placeholder="Assunto" name="subject">
-                <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
-                <input type="submit" class="main-btn">
+              <form action="" id="myForm">
+                <label for="email">Digite o e-amail</label>
+                <input type="text" class="form-control" placeholder="E-mail" name="email" id="email">
+                <label for="assunto">Digite o Assunto</label>
+                <input type="text" class="form-control" placeholder="Assunto" name="subject" id="assunto">
+                <label for="mensagem">Digite a mensagem</label>
+                <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message" id="mensagem"></textarea>
+                <button type="submit" class="main-btn">
               </form>
             </div>
           </div>
